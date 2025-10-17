@@ -3,13 +3,13 @@ import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
 
 const prices = [
-  { title: 'Первое занятие', price: 'Бесплатно', description: 'Познакомьтесь со студией и выберите направление' },
-  { title: 'Занятие 45 минут', price: '600 ₽', description: 'Индивидуальное занятие' },
-  { title: 'Занятие 1 час', price: '700 ₽', description: 'Индивидуальное занятие' },
-  { title: 'Занятие 1 час 30 минут', price: '800 ₽', description: 'Индивидуальное занятие' },
-  { title: 'Абонемент на 8 занятий по 45 минут', price: '3800 ₽', description: 'Выгода 1000 ₽' },
-  { title: 'Абонемент на 8 занятий по часу', price: '4600 ₽', description: 'Выгода 1000 ₽' },
-  { title: 'Абонемент на 8 занятий по полтора часа', price: '5400 ₽', description: 'Выгода 1000 ₽' }
+  { title: 'Первое занятие', price: 'Бесплатно', description: 'Познакомьтесь со студией и выберите направление', icon: 'Gift' },
+  { title: 'Занятие 45 минут', price: '600 ₽', description: 'Индивидуальное занятие', icon: 'Clock' },
+  { title: 'Занятие 1 час', price: '700 ₽', description: 'Индивидуальное занятие', icon: 'Clock3' },
+  { title: 'Занятие 1 час 30 минут', price: '800 ₽', description: 'Индивидуальное занятие', icon: 'Clock4' },
+  { title: 'Абонемент на 8 занятий по 45 минут', price: '3800 ₽', description: 'Выгода 1000 ₽', icon: 'Ticket' },
+  { title: 'Абонемент на 8 занятий по часу', price: '4600 ₽', description: 'Выгода 1000 ₽', icon: 'Ticket' },
+  { title: 'Абонемент на 8 занятий по полтора часа', price: '5400 ₽', description: 'Выгода 1000 ₽', icon: 'Ticket' }
 ];
 
 export default function PricesSection() {
@@ -28,7 +28,7 @@ export default function PricesSection() {
               <CardHeader>
                 <CardTitle className="flex items-center justify-between gap-2">
                   <span>{item.title}</span>
-                  <Icon name="Sparkles" className="text-primary" size={20} />
+                  <Icon name={item.icon} className="text-primary" size={20} />
                 </CardTitle>
                 <CardDescription>{item.description}</CardDescription>
               </CardHeader>
