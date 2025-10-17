@@ -127,6 +127,7 @@ export default function Index() {
             <div className="hidden md:flex gap-6">
               <a href="#courses" className="hover:text-primary transition-colors">Направления</a>
               <a href="#schedule" className="hover:text-primary transition-colors">Расписание</a>
+              <a href="#gallery" className="hover:text-primary transition-colors">Галерея</a>
               <a href="#prices" className="hover:text-primary transition-colors">Цены</a>
               <a href="#reviews" className="hover:text-primary transition-colors">Отзывы</a>
               <a href="#contact" className="hover:text-primary transition-colors">Контакты</a>
@@ -252,6 +253,80 @@ export default function Index() {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Gallery Section */}
+      <section id="gallery" className="py-20 px-4">
+        <div className="container mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
+            Наша студия 📸
+          </h2>
+          <p className="text-center text-muted-foreground mb-12 text-lg">
+            Посмотрите, где проходят занятия
+          </p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="relative overflow-hidden rounded-2xl aspect-square group">
+              <img 
+                src="https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/3c98c03e-2aa6-4e71-a6db-d0639e31312f.jpg"
+                alt="Интерьер студии"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <p className="text-white font-semibold">Интерьер студии</p>
+              </div>
+            </div>
+            <div className="relative overflow-hidden rounded-2xl aspect-square group">
+              <img 
+                src="https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/706addf8-d6a4-4d44-b31f-cd91bb145800.jpg"
+                alt="Урок гитары"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <p className="text-white font-semibold">Урок гитары</p>
+              </div>
+            </div>
+            <div className="relative overflow-hidden rounded-2xl aspect-square group">
+              <img 
+                src="https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/65828b31-fe1c-4fe2-a2e4-468c39adecea.jpg"
+                alt="Актёрское мастерство"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <p className="text-white font-semibold">Актёрское мастерство</p>
+              </div>
+            </div>
+            <div className="relative overflow-hidden rounded-2xl aspect-square group">
+              <img 
+                src="https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/adcfe097-6632-4217-a3ca-7a3a68c6e704.jpg"
+                alt="Занятия на синтезаторе"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <p className="text-white font-semibold">Занятия на синтезаторе</p>
+              </div>
+            </div>
+            <div className="relative overflow-hidden rounded-2xl aspect-square group">
+              <img 
+                src="https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/535d8b83-2f33-48ed-876d-b501f17aa613.jpg"
+                alt="Вокальная студия"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <p className="text-white font-semibold">Вокальная студия</p>
+              </div>
+            </div>
+            <div className="relative overflow-hidden rounded-2xl aspect-square group">
+              <img 
+                src="https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/ff294951-2b36-42ef-9ad2-77b0a3d5876e.jpg"
+                alt="Музыкальные инструменты"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <p className="text-white font-semibold">Музыкальные инструменты</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
