@@ -46,7 +46,7 @@ export default function ContactSection() {
                 <Icon name="MapPin" className="text-primary" size={20} />
                 <div>
                   <div className="font-semibold">Адрес</div>
-                  <div className="text-muted-foreground">г. Краснодар, ул. Примерная, 123</div>
+                  <div className="text-muted-foreground">г. Краснодар, ул. Душистая, 43</div>
                 </div>
               </div>
               <div className="flex items-center gap-3">
