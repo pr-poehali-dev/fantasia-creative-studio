@@ -28,7 +28,7 @@ export default function ContactSection() {
         <p className="text-center text-muted-foreground mb-12 text-lg">
           Запишитесь на бесплатное пробное занятие
         </p>
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 gap-6 mb-8">
           <Card>
             <CardHeader>
               <CardTitle>Контактная информация</CardTitle>
@@ -106,6 +106,28 @@ export default function ContactSection() {
             </CardContent>
           </Card>
         </div>
+
+        <Card>
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Icon name="MapPin" className="text-primary" size={20} />
+              Как нас найти
+            </CardTitle>
+            <CardDescription>г. Краснодар, ул. Душистая, 43</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="w-full h-[400px] rounded-lg overflow-hidden">
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?ll=38.976845%2C45.040314&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzEwNDYwMhJP0KDQvtGB0YHQuNGPLCDQmtGA0LDRgdC90L7QtNCw0YAsINGD0LvQuNGG0LAg0JTRg9GI0LjRgdGC0LDRjywgNDMiCg24rUJCFWkpWUI%2C&z=17"
+                width="100%"
+                height="100%"
+                frameBorder="0"
+                allowFullScreen={true}
+                style={{ position: 'relative' }}
+              ></iframe>
+            </div>
+          </CardContent>
+        </Card>
       </div>
     </section>
   );
