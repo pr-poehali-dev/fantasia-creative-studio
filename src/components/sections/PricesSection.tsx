@@ -26,9 +26,9 @@ export default function PricesSection() {
           {prices.map((item, index) => (
             <Card key={index} className="hover:shadow-xl transition-all hover:-translate-y-1">
               <CardHeader>
-                <CardTitle className="flex items-center gap-2">
+                <CardTitle className="flex items-center justify-between gap-2">
+                  <span>{item.title}</span>
                   <Icon name="Sparkles" className="text-primary" size={20} />
-                  {item.title}
                 </CardTitle>
                 <CardDescription>{item.description}</CardDescription>
               </CardHeader>
