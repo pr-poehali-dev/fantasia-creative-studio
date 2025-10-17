@@ -1,0 +1,47 @@
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import Icon from '@/components/ui/icon';
+
+const prices = [
+  { title: 'Первое занятие', price: 'Бесплатно', description: 'Познакомьтесь со студией и выберите направление' },
+  { title: 'Занятие 45 минут', price: '600 ₽', description: 'Индивидуальное занятие' },
+  { title: 'Занятие 1 час', price: '700 ₽', description: 'Индивидуальное занятие' },
+  { title: 'Занятие 1 час 30 минут', price: '800 ₽', description: 'Индивидуальное занятие' },
+  { title: 'Абонемент на 8 занятий по 45 минут', price: '3800 ₽', description: 'Выгода 1000 ₽' },
+  { title: 'Абонемент на 8 занятий по часу', price: '4600 ₽', description: 'Выгода 1000 ₽' },
+  { title: 'Абонемент на 8 занятий по полтора часа', price: '5400 ₽', description: 'Выгода 1000 ₽' }
+];
+
+export default function PricesSection() {
+  return (
+    <section id="prices" className="py-20 px-4 bg-gradient-to-br from-orange-50 via-pink-50 to-purple-50">
+      <div className="container mx-auto">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
+          Цены на занятия
+        </h2>
+        <p className="text-center text-muted-foreground mb-12 text-lg">
+          Выберите подходящий для вас вариант
+        </p>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          {prices.map((item, index) => (
+            <Card key={index} className="hover:shadow-xl transition-all hover:-translate-y-1">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Icon name="Sparkles" className="text-primary" size={20} />
+                  {item.title}
+                </CardTitle>
+                <CardDescription>{item.description}</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="text-3xl font-bold text-primary mb-4">{item.price}</div>
+                <Button className="w-full bg-gradient-to-r from-primary to-accent hover:opacity-90">
+                  Записаться
+                </Button>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
