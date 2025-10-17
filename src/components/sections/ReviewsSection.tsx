@@ -1,5 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
+import { useState } from 'react';
 
 const reviews = [
   { name: 'Анна Петрова', course: 'Гитара', text: 'Прекрасная студия! За 3 месяца научилась играть свои любимые песни. Преподаватели очень внимательные и терпеливые.', rating: 5, photo: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/290fa682-32fa-4ac0-b583-57efd0ad51ab.jpg' },
@@ -112,6 +114,9 @@ const reviews = [
 ];
 
 export default function ReviewsSection() {
+  const [showAll, setShowAll] = useState(false);
+  const displayedReviews = showAll ? reviews : reviews.slice(0, 6);
+
   return (
     <section id="reviews" className="py-20 px-4">
       <div className="container mx-auto">
@@ -122,7 +127,7 @@ export default function ReviewsSection() {
           Нам доверяют сотни учеников
         </p>
         <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-          {reviews.slice(0, 6).map((review, index) => (
+          {displayedReviews.map((review, index) => (
             <Card key={index} className="hover:shadow-xl transition-shadow">
               <CardHeader>
                 <div className="flex items-center gap-3 mb-3">
@@ -151,6 +156,17 @@ export default function ReviewsSection() {
             </Card>
           ))}
         </div>
+        {!showAll && (
+          <div className="text-center mt-12">
+            <Button 
+              onClick={() => setShowAll(true)} 
+              size="lg"
+              className="px-8"
+            >
+              Показать больше отзывов
+            </Button>
+          </div>
+        )}
       </div>
     </section>
   );
