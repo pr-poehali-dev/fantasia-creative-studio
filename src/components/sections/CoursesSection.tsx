@@ -83,7 +83,9 @@ export default function CoursesSection() {
               <CardHeader>
                 <CardTitle className="flex items-center justify-between gap-2">
                   <span>{course.title}</span>
-                  <Icon name={course.icon} className="text-primary" size={24} />
+                  <div className={`bg-gradient-to-br ${course.color} p-2 rounded-full`}>
+                    <Icon name={course.icon} className="text-white" size={24} />
+                  </div>
                 </CardTitle>
                 <CardDescription className="text-base">
                   {course.description}
