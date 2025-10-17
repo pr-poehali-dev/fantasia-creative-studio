@@ -7,6 +7,7 @@ const courses = [
     id: 1,
     title: 'Гитара',
     icon: 'Music',
+    iconImage: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/828daa1a-5848-4aa4-a79b-378f05da5124.jpg',
     emoji: '🎸',
     image: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/e19f7bb7-f6df-4d4b-8d48-27fbe6d49b93.jpg',
     description: 'Научитесь играть любимые композиции под руководством опытных преподавателей. Освойте аккорды, ритм и технику игры.',
@@ -16,6 +17,7 @@ const courses = [
     id: 2,
     title: 'Укулеле',
     icon: 'Music2',
+    iconImage: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/1c1e6407-512a-43c6-bbba-abe275976d67.jpg',
     emoji: '🎶',
     image: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/7d757fdc-9175-4a8c-b19f-510d6e1a9cad.jpg',
     description: 'Маленький инструмент с большим звучанием! Идеален для начинающих и для создания весёлого настроения.',
@@ -25,6 +27,7 @@ const courses = [
     id: 3,
     title: 'Электрогитара',
     icon: 'Radio',
+    iconImage: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/de92d1e8-f798-4be6-aa6a-f8e434b42019.jpg',
     emoji: '🎹',
     image: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/bd5cd844-7f5b-4f36-bfce-7d72f79c2896.jpg',
     description: 'Погрузитесь в мир рока и блюза. Научитесь играть соло и аккомпанемент, изучите чистый и перегруженный звук.',
@@ -34,6 +37,7 @@ const courses = [
     id: 4,
     title: 'Синтезатор',
     icon: 'Piano',
+    iconImage: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/3e6d655e-a9a8-44d0-8453-356b56b53ff4.jpg',
     emoji: '🎹',
     image: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/afe7e5b6-3097-4f94-8b33-80e8edd50c13.jpg',
     description: 'Откройте безграничные возможности электроники. Научитесь создавать и комбинировать разные звуки и стили.',
@@ -43,6 +47,7 @@ const courses = [
     id: 5,
     title: 'Сценическая речь',
     icon: 'Mic',
+    iconImage: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/998487d0-ffb3-4e9a-9167-8fa0292e74b1.jpg',
     emoji: '🎤',
     image: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/8ed767ef-9dfd-4919-88a1-f1260858af1e.jpg',
     description: 'Научитесь уверенно говорить на публике, уделяя внимание интонации, тембру и выразительности.',
@@ -52,6 +57,7 @@ const courses = [
     id: 6,
     title: 'Актерское мастерство',
     icon: 'Drama',
+    iconImage: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/c07d123d-6f77-46cb-a8ae-43671bbad6b2.jpg',
     emoji: '🎭',
     image: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/9659286b-b246-4766-8cc8-e464af63770c.jpg',
     description: 'Погрузитесь в мир театра! Освойте современные техники актерского мастерства, развивайте память и креативность.',
@@ -83,9 +89,11 @@ export default function CoursesSection() {
               <CardHeader>
                 <CardTitle className="flex items-center justify-between gap-2">
                   <span>{course.title}</span>
-                  <div className={`bg-gradient-to-br ${course.color} p-2 rounded-full`}>
-                    <Icon name={course.icon} className="text-white" size={24} />
-                  </div>
+                  <img 
+                    src={course.iconImage} 
+                    alt={course.title}
+                    className="w-12 h-12 object-contain"
+                  />
                 </CardTitle>
                 <CardDescription className="text-base">
                   {course.description}
