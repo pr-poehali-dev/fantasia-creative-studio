@@ -204,14 +204,18 @@ export default function Index() {
                       {course.emoji}
                     </div>
                   </div>
-                  <div className="flex-1">
+                  <div className="flex-1 flex flex-col">
                     <CardHeader>
                       <CardTitle className="text-2xl">{course.title}</CardTitle>
                     </CardHeader>
-                    <CardContent>
-                      <CardDescription className="text-base">
+                    <CardContent className="flex-1 flex flex-col justify-between">
+                      <CardDescription className="text-base mb-4">
                         {course.description}
                       </CardDescription>
+                      <Button className={`bg-gradient-to-r ${course.color} hover:opacity-90 w-full sm:w-auto`}>
+                        <Icon name="Calendar" className="mr-2" size={18} />
+                        Записаться
+                      </Button>
                     </CardContent>
                   </div>
                 </div>
