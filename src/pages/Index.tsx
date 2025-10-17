@@ -75,7 +75,9 @@ const schedule = [
 
 const prices = [
   { title: 'Первое занятие', price: 'Бесплатно', description: 'Познакомьтесь со студией и выберите направление' },
-  { title: 'Занятие 45 минут', price: '600 ₽', description: 'Индивидуальное занятие' }
+  { title: 'Занятие 45 минут', price: '600 ₽', description: 'Индивидуальное занятие' },
+  { title: 'Занятие 1 час', price: '700 ₽', description: 'Индивидуальное занятие' },
+  { title: 'Занятие 1 час 30 минут', price: '800 ₽', description: 'Индивидуальное занятие' }
 ];
 
 const reviews = [
