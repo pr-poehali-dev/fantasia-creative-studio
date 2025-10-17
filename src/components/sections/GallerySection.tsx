@@ -1,12 +1,5 @@
 export default function GallerySection() {
-  const galleryImages = [
-    'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/e19f7bb7-f6df-4d4b-8d48-27fbe6d49b93.jpg',
-    'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/7d757fdc-9175-4a8c-b19f-510d6e1a9cad.jpg',
-    'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/bd5cd844-7f5b-4f36-bfce-7d72f79c2896.jpg',
-    'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/afe7e5b6-3097-4f94-8b33-80e8edd50c13.jpg',
-    'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/8ed767ef-9dfd-4919-88a1-f1260858af1e.jpg',
-    'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/9659286b-b246-4766-8cc8-e464af63770c.jpg'
-  ];
+  const galleryImages: string[] = [];
 
   return (
     <section id="gallery" className="py-20 px-4">
