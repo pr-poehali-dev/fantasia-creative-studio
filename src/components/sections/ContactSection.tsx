@@ -116,7 +116,7 @@ export default function ContactSection() {
             <CardDescription>г. Краснодар, ул. Душистая, 43</CardDescription>
           </CardHeader>
           <CardContent>
-            <div className="w-full h-[400px] rounded-lg overflow-hidden">
+            <div className="w-full h-[400px] rounded-lg overflow-hidden mb-4">
               <iframe
                 src="https://yandex.ru/map-widget/v1/?ll=38.976845%2C45.040314&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzEwNDYwMhJP0KDQvtGB0YHQuNGPLCDQmtGA0LDRgdC90L7QtNCw0YAsINGD0LvQuNGG0LAg0JTRg9GI0LjRgdGC0LDRjywgNDMiCg24rUJCFWkpWUI%2C&z=17"
                 width="100%"
@@ -126,6 +126,13 @@ export default function ContactSection() {
                 style={{ position: 'relative' }}
               ></iframe>
             </div>
+            <Button 
+              className="w-full bg-gradient-to-r from-primary to-accent hover:opacity-90"
+              onClick={() => window.open('https://yandex.ru/maps/?rtext=~45.040314,38.976845', '_blank')}
+            >
+              <Icon name="Navigation" className="mr-2" size={16} />
+              Построить маршрут
+            </Button>
           </CardContent>
         </Card>
       </div>
