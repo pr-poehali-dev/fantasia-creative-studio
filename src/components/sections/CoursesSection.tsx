@@ -78,11 +78,15 @@ export default function CoursesSection() {
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className={`absolute inset-0 bg-gradient-to-br ${course.color} opacity-20 group-hover:opacity-30 transition-opacity`}></div>
-                <div className="absolute top-4 right-4 text-4xl">{course.emoji}</div>
+                <div className="absolute top-4 right-4 flex items-center gap-2">
+                  <div className="text-4xl">{course.emoji}</div>
+                  <div className="bg-white/90 backdrop-blur-sm p-2 rounded-full">
+                    <Icon name={course.icon} className="text-primary" size={24} />
+                  </div>
+                </div>
               </div>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
-                  <Icon name={course.icon} className="text-primary" size={24} />
                   {course.title}
                 </CardTitle>
                 <CardDescription className="text-base">
