@@ -181,7 +181,7 @@ export default function Index() {
       <section id="courses" className="py-20 px-4">
         <div className="container mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-4">
-            Наши направления 🎭
+            Наши направления
           </h2>
           <p className="text-center text-muted-foreground mb-12 text-lg">
             Выберите то, что вам по душе
