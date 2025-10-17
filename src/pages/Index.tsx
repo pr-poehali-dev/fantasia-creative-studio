@@ -165,11 +165,11 @@ export default function Index() {
               <div className="text-muted-foreground">Направлений</div>
             </div>
             <div className="animate-scale-in" style={{ animationDelay: '0.1s' }}>
-              <div className="text-4xl font-bold text-secondary">200+</div>
+              <div className="text-4xl font-bold text-secondary">800+</div>
               <div className="text-muted-foreground">Учеников</div>
             </div>
             <div className="animate-scale-in" style={{ animationDelay: '0.2s' }}>
-              <div className="text-4xl font-bold text-accent">5</div>
+              <div className="text-4xl font-bold text-accent">20+</div>
               <div className="text-muted-foreground">Лет опыта</div>
             </div>
           </div>
