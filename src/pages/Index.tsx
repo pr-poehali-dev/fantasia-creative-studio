@@ -186,31 +186,35 @@ export default function Index() {
           <p className="text-center text-muted-foreground mb-12 text-lg">
             Выберите то, что вам по душе
           </p>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid lg:grid-cols-2 gap-6">
             {courses.map((course, index) => (
               <Card 
                 key={course.id} 
-                className="hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 animate-fade-in border-2 overflow-hidden"
+                className="hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 animate-fade-in border-2 overflow-hidden"
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
-                <div className="relative h-48 overflow-hidden">
-                  <img 
-                    src={course.image} 
-                    alt={course.title}
-                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
-                  />
-                  <div className={`absolute top-4 right-4 w-12 h-12 rounded-xl bg-gradient-to-br ${course.color} flex items-center justify-center text-2xl shadow-lg`}>
-                    {course.emoji}
+                <div className="flex flex-col sm:flex-row">
+                  <div className="relative w-full sm:w-48 h-48 flex-shrink-0 overflow-hidden">
+                    <img 
+                      src={course.image} 
+                      alt={course.title}
+                      className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                    />
+                    <div className={`absolute top-4 right-4 w-12 h-12 rounded-xl bg-gradient-to-br ${course.color} flex items-center justify-center text-2xl shadow-lg`}>
+                      {course.emoji}
+                    </div>
+                  </div>
+                  <div className="flex-1">
+                    <CardHeader>
+                      <CardTitle className="text-2xl">{course.title}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <CardDescription className="text-base">
+                        {course.description}
+                      </CardDescription>
+                    </CardContent>
                   </div>
                 </div>
-                <CardHeader>
-                  <CardTitle className="text-2xl">{course.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription className="text-base">
-                    {course.description}
-                  </CardDescription>
-                </CardContent>
               </Card>
             ))}
           </div>
