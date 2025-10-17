@@ -120,7 +120,6 @@ export default function Index() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <span className="text-3xl">🎨</span>
               <h1 className="text-2xl font-bold bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
                 Фантазия
               </h1>
@@ -200,13 +199,15 @@ export default function Index() {
                       alt={course.title}
                       className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                     />
-                    <div className={`absolute top-4 right-4 w-12 h-12 rounded-xl bg-gradient-to-br ${course.color} flex items-center justify-center text-2xl shadow-lg`}>
-                      {course.emoji}
-                    </div>
                   </div>
                   <div className="flex-1 flex flex-col">
                     <CardHeader>
-                      <CardTitle className="text-2xl">{course.title}</CardTitle>
+                      <CardTitle className="text-2xl flex items-center gap-3">
+                        <div className={`w-10 h-10 rounded-lg bg-gradient-to-br ${course.color} flex items-center justify-center text-xl flex-shrink-0`}>
+                          {course.emoji}
+                        </div>
+                        {course.title}
+                      </CardTitle>
                     </CardHeader>
                     <CardContent className="flex-1 flex flex-col justify-between">
                       <CardDescription className="text-base mb-4">
