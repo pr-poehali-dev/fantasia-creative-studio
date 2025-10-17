@@ -1,4 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
 
 const courses = [
@@ -93,6 +94,12 @@ export default function CoursesSection() {
                   {course.description}
                 </CardDescription>
               </CardHeader>
+              <CardContent>
+                <Button className="w-full bg-gradient-to-r from-primary to-accent hover:opacity-90">
+                  <Icon name="CalendarCheck" className="mr-2" size={16} />
+                  Записаться
+                </Button>
+              </CardContent>
             </Card>
           ))}
         </div>
