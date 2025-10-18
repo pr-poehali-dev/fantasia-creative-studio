@@ -7,7 +7,7 @@ const courses = [
     id: 1,
     title: 'Гитара',
     icon: 'Music',
-    iconImage: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/828daa1a-5848-4aa4-a79b-378f05da5124.jpg',
+    iconImage: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/0f061830-6742-45e3-b051-8eb062f5a093.jpg',
     emoji: '💜🩷',
     image: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/e19f7bb7-f6df-4d4b-8d48-27fbe6d49b93.jpg',
     description: 'Научитесь играть любимые композиции под руководством опытных преподавателей. Освойте аккорды, ритм и технику игры.',
@@ -89,7 +89,15 @@ export default function CoursesSection() {
               <CardHeader>
                 <CardTitle className="flex items-center justify-between gap-2">
                   <span>{course.title}</span>
-                  <span className="text-4xl">{course.emoji}</span>
+                  {course.iconImage ? (
+                    <img 
+                      src={course.iconImage} 
+                      alt={course.title}
+                      className="w-12 h-12 object-contain"
+                    />
+                  ) : (
+                    <span className="text-4xl">{course.emoji}</span>
+                  )}
                 </CardTitle>
                 <CardDescription className="text-base">
                   {course.description}
