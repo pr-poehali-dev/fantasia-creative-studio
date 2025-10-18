@@ -17,7 +17,7 @@ const courses = [
     id: 2,
     title: 'Укулеле',
     icon: 'Music2',
-    iconImage: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/1c1e6407-512a-43c6-bbba-abe275976d67.jpg',
+    iconImage: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/ad9bff83-866e-4e2b-9a94-b04f2b9c05b2.jpg',
     emoji: '🧡💛',
     image: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/7d757fdc-9175-4a8c-b19f-510d6e1a9cad.jpg',
     description: 'Маленький инструмент с большим звучанием! Идеален для начинающих и для создания весёлого настроения.',
