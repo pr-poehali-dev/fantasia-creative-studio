@@ -37,9 +37,11 @@ export default function ContactSection() {
             <CardContent className="space-y-4">
               <div className="flex items-center gap-3">
                 <Icon name="Phone" className="text-primary" size={20} />
-                <div>
+                <div className="flex-1">
                   <div className="font-semibold">Телефон</div>
-                  <div className="text-muted-foreground">+7 918 035 21 39</div>
+                  <a href="tel:+79180352139" className="text-muted-foreground hover:text-primary transition-colors">
+                    +7 918 035 21 39
+                  </a>
                 </div>
               </div>
               <div className="flex items-center gap-3">
