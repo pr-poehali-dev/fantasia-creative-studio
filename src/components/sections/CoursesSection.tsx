@@ -8,7 +8,7 @@ const courses = [
     title: 'Гитара',
     icon: 'Music',
     iconImage: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/828daa1a-5848-4aa4-a79b-378f05da5124.jpg',
-    emoji: '🎸',
+    emoji: '🎼',
     image: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/e19f7bb7-f6df-4d4b-8d48-27fbe6d49b93.jpg',
     description: 'Научитесь играть любимые композиции под руководством опытных преподавателей. Освойте аккорды, ритм и технику игры.',
     color: 'from-purple-500 to-pink-500'
