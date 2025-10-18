@@ -47,7 +47,7 @@ const courses = [
     id: 5,
     title: 'Сценическая речь',
     icon: 'Mic',
-    iconImage: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/998487d0-ffb3-4e9a-9167-8fa0292e74b1.jpg',
+    iconImage: '',
     emoji: '🎙️',
     image: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/8ed767ef-9dfd-4919-88a1-f1260858af1e.jpg',
     description: 'Научитесь уверенно говорить на публике, уделяя внимание интонации, тембру и выразительности.',
