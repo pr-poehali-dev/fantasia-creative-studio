@@ -37,7 +37,7 @@ const courses = [
     id: 4,
     title: 'Синтезатор',
     icon: 'Piano',
-    iconImage: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/c34bdda9-aeb7-4fab-b32f-342086d44eb2.jpg',
+    iconImage: '',
     emoji: '🎹',
     image: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/afe7e5b6-3097-4f94-8b33-80e8edd50c13.jpg',
     description: 'Откройте безграничные возможности электроники. Научитесь создавать и комбинировать разные звуки и стили.',
