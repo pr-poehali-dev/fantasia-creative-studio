@@ -3,8 +3,8 @@ import Icon from '@/components/ui/icon';
 import { useEffect, useState } from 'react';
 
 const stats = [
-  { icon: 'Users', label: 'Учеников', value: 500, suffix: '+' },
-  { icon: 'Award', label: 'Лет опыта', value: 10, suffix: '' },
+  { icon: 'Users', label: 'Учеников', value: 800, suffix: '+' },
+  { icon: 'Award', label: 'Лет опыта', value: 20, suffix: '' },
   { icon: 'Music', label: 'Курсов', value: 6, suffix: '' },
   { icon: 'Star', label: 'Средний рейтинг', value: 4.9, suffix: '/5' }
 ];
