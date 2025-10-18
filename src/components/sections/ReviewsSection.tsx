@@ -37,7 +37,7 @@ const reviews = [
   { name: 'Сергей Кузнецов', course: 'Сценическая речь', text: 'Занятия по сценической речи превзошли все ожидания!', rating: 5, photo: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/0b26654a-cc73-416c-971a-028ba10e2fba.jpg' },
   { name: 'Татьяна Морозова', course: 'Гитара', text: 'Замечательные педагоги, уютная атмосфера. Рекомендую!', rating: 5, photo: photos[6] },
   { name: 'Алексей Новиков', course: 'Актерское мастерство', text: 'Сын занимается второй год. Очень доволен результатами!', rating: 5, photo: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/dfefaa61-2ac4-4ebf-9820-40c831bf8186.jpg' },
-  { name: 'Наталья Федорова', course: 'Синтезатор', text: 'Прекрасная студия с душевной атмосферой!', rating: 5, photo: photos[8] },
+  { name: 'Наталья Федорова', course: 'Синтезатор', text: 'Прекрасная студия с душевной атмосферой!', rating: 5, photo: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/8cba01f9-3006-4502-86fe-341668306a15.jpg' },
   { name: 'Игорь Лебедев', course: 'Электрогитара', text: 'За полгода научился играть рок-композиции. Супер!', rating: 5, photo: photos[9] },
   { name: 'Мария Козлова', course: 'Укулеле', text: 'Приятная атмосфера, внимательные преподаватели!', rating: 4, photo: photos[0] },
   { name: 'Виктор Павлов', course: 'Сценическая речь', text: 'Отличный результат за короткое время!', rating: 5, photo: photos[1] },
