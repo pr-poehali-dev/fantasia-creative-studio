@@ -28,7 +28,7 @@ const courses = [
     title: 'Электрогитара',
     icon: 'Radio',
     iconImage: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/de92d1e8-f798-4be6-aa6a-f8e434b42019.jpg',
-    emoji: '🎹',
+    emoji: '🎸',
     image: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/bd5cd844-7f5b-4f36-bfce-7d72f79c2896.jpg',
     description: 'Погрузитесь в мир рока и блюза. Научитесь играть соло и аккомпанемент, изучите чистый и перегруженный звук.',
     color: 'from-blue-500 to-cyan-500'
