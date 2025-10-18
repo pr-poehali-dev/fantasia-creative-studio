@@ -1,6 +1,8 @@
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
 import { useState } from 'react';
 
 const photos = [
@@ -139,6 +141,22 @@ const reviews = [
 export default function ReviewsSection() {
   const [showAll, setShowAll] = useState(false);
   const displayedReviews = showAll ? reviews : reviews.slice(0, 6);
+  const [formData, setFormData] = useState({ name: '', course: '', text: '' });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitSuccess, setSubmitSuccess] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    
+    setSubmitSuccess(true);
+    setFormData({ name: '', course: '', text: '' });
+    setIsSubmitting(false);
+    
+    setTimeout(() => setSubmitSuccess(false), 3000);
+  };
 
   return (
     <section id="reviews" className="py-20 px-4">
@@ -190,6 +208,72 @@ export default function ReviewsSection() {
             </Button>
           </div>
         )}
+
+        <div className="max-w-2xl mx-auto mt-16">
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-2xl">Оставьте свой отзыв</CardTitle>
+              <CardDescription>Поделитесь своими впечатлениями о занятиях</CardDescription>
+            </CardHeader>
+            <CardContent>
+              {submitSuccess ? (
+                <div className="text-center py-8">
+                  <Icon name="CheckCircle" className="text-green-500 mx-auto mb-4" size={48} />
+                  <p className="text-lg font-semibold">Спасибо за ваш отзыв!</p>
+                  <p className="text-muted-foreground">Мы ценим ваше мнение</p>
+                </div>
+              ) : (
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-medium mb-2">
+                      Ваше имя
+                    </label>
+                    <Input
+                      id="name"
+                      value={formData.name}
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      placeholder="Иван Иванов"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="course" className="block text-sm font-medium mb-2">
+                      Курс
+                    </label>
+                    <Input
+                      id="course"
+                      value={formData.course}
+                      onChange={(e) => setFormData({ ...formData, course: e.target.value })}
+                      placeholder="Гитара"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="text" className="block text-sm font-medium mb-2">
+                      Ваш отзыв
+                    </label>
+                    <Textarea
+                      id="text"
+                      value={formData.text}
+                      onChange={(e) => setFormData({ ...formData, text: e.target.value })}
+                      placeholder="Расскажите о своих впечатлениях..."
+                      rows={4}
+                      required
+                    />
+                  </div>
+                  <Button 
+                    type="submit" 
+                    className="w-full" 
+                    size="lg"
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? 'Отправка...' : 'Отправить отзыв'}
+                  </Button>
+                </form>
+              )}
+            </CardContent>
+          </Card>
+        </div>
       </div>
     </section>
   );
