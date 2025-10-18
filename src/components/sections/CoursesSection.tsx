@@ -89,11 +89,7 @@ export default function CoursesSection() {
               <CardHeader>
                 <CardTitle className="flex items-center justify-between gap-2">
                   <span>{course.title}</span>
-                  <img 
-                    src={course.iconImage} 
-                    alt={course.title}
-                    className="w-12 h-12 object-contain"
-                  />
+                  <span className="text-4xl">{course.emoji}</span>
                 </CardTitle>
                 <CardDescription className="text-base">
                   {course.description}
