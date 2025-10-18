@@ -4,16 +4,16 @@ import Icon from '@/components/ui/icon';
 import { useState } from 'react';
 
 const photos = [
-  'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/09697bf8-fdec-4ce4-bf59-d223ee6d1be9.jpg',
-  'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/08897a8d-9ee5-4cc4-99a3-f3e3a5c73fc2.jpg',
-  'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/e4a404ff-501a-4302-8889-8d1997738d67.jpg',
-  'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/3c54653d-acd2-44a7-abf8-a4407270f856.jpg',
-  'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/d337c4f9-1b9d-491f-bc00-254116fd80c6.jpg',
-  'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/c465444d-b10d-463d-b596-4a89cb12bf35.jpg',
-  'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/368e4bdb-2edd-4578-9127-75299f6be39f.jpg',
-  'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/9bffbe82-e9ec-4f5a-9b07-62357cb0645e.jpg',
-  'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/d7bc62a1-c7cb-4e02-b5ad-cfe9f1644e36.jpg',
-  'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/6e3ad779-52e8-4786-830d-8b088179cf14.jpg'
+  'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/b4b30750-525c-49d0-aa28-704bfea1208d.jpg',
+  'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/0ad57f69-c568-48f5-9720-ff4fa8599c48.jpg',
+  'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/169dc64c-c008-47d8-a79d-d4ccdd7eaa28.jpg',
+  'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/f7290771-4139-4467-8be9-00f1c0eec1b6.jpg',
+  'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/a9b16600-a987-4c9a-aebb-8cbcbe0025d8.jpg',
+  'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/33d42ea6-0575-47c2-b59f-ffe5d4b77382.jpg',
+  'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/a61f98b8-40b4-4f1e-b90d-bb9e67e502bb.jpg',
+  'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/c912d307-7b7d-441a-bb87-71ea89f7dd4d.jpg',
+  'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/1104875e-7af2-46b9-92c7-ac1e11d239db.jpg',
+  'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/62318c9f-4cf3-4e2c-a485-a225d1877797.jpg'
 ];
 
 const reviews = [
