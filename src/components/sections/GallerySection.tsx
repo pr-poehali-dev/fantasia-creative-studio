@@ -4,8 +4,7 @@ export default function GallerySection() {
     'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/489b04d9-6bc9-4832-9a54-3cfb10ec9e0c.jpg',
     'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/8488764d-c92a-4eff-9805-0147a4749e63.jpg',
     'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/9a0c554d-6588-423e-a8f1-3ef08241a441.jpg',
-    'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/3f606823-6693-4c86-aae7-69b00d3a1e4d.jpg',
-    'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/1d1f70bb-24bb-49b3-8c62-6ee78ade92a4.jpg'
+    'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/3f606823-6693-4c86-aae7-69b00d3a1e4d.jpg'
   ];
 
   return (
