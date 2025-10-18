@@ -1,7 +1,28 @@
 import { Button } from '@/components/ui/button';
 import Icon from '@/components/ui/icon';
+import { useEffect, useState } from 'react';
 
 export default function HeroSection() {
+  const [visitors, setVisitors] = useState<number>(0);
+
+  useEffect(() => {
+    // Анимация счётчика посетителей
+    const targetVisitors = Math.floor(Math.random() * 500) + 1500; // Примерное число посетителей
+    let current = 0;
+    const increment = targetVisitors / 50;
+    const timer = setInterval(() => {
+      current += increment;
+      if (current >= targetVisitors) {
+        setVisitors(targetVisitors);
+        clearInterval(timer);
+      } else {
+        setVisitors(Math.floor(current));
+      }
+    }, 30);
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <section className="pt-32 pb-20 px-4 bg-gradient-to-br from-purple-50 via-orange-50 to-pink-50">
       <div className="container mx-auto text-center">
@@ -42,6 +63,13 @@ export default function HeroSection() {
               <span className="text-yellow-600">4.9</span>
             </div>
             <div className="text-muted-foreground">Рейтинг</div>
+          </div>
+          <div className="animate-scale-in" style={{ animationDelay: '0.4s' }}>
+            <div className="text-4xl font-bold flex items-center justify-center gap-1">
+              <Icon name="Users" size={32} className="text-blue-500" />
+              <span className="text-blue-600">{visitors.toLocaleString('ru-RU')}</span>
+            </div>
+            <div className="text-muted-foreground">Посетителей сайта</div>
           </div>
         </div>
       </div>
