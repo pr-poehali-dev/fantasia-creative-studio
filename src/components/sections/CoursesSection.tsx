@@ -19,7 +19,7 @@ const courses = [
     icon: 'Music2',
     iconImage: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/ad9bff83-866e-4e2b-9a94-b04f2b9c05b2.jpg',
     emoji: '🧡💛',
-    image: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/7d757fdc-9175-4a8c-b19f-510d6e1a9cad.jpg',
+    image: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/13806362-5b63-4f6d-b9d0-7c5985042226.jpg',
     description: 'Маленький инструмент с большим звучанием! Идеален для начинающих и для создания весёлого настроения.',
     color: 'from-orange-500 to-yellow-500'
   },
