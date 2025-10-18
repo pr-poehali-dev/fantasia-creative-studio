@@ -1,5 +1,6 @@
 import Navigation from '@/components/sections/Navigation';
 import HeroSection from '@/components/sections/HeroSection';
+import StatsSection from '@/components/sections/StatsSection';
 import CoursesSection from '@/components/sections/CoursesSection';
 import ScheduleSection from '@/components/sections/ScheduleSection';
 import GallerySection from '@/components/sections/GallerySection';
@@ -13,6 +14,7 @@ export default function Index() {
     <div className="min-h-screen">
       <Navigation />
       <HeroSection />
+      <StatsSection />
       <CoursesSection />
       <ScheduleSection />
       <GallerySection />
