@@ -8,7 +8,7 @@ const courses = [
     title: 'Гитара',
     icon: 'Music',
     iconImage: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/828daa1a-5848-4aa4-a79b-378f05da5124.jpg',
-    emoji: '🎸',
+    emoji: '💜🩷',
     image: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/e19f7bb7-f6df-4d4b-8d48-27fbe6d49b93.jpg',
     description: 'Научитесь играть любимые композиции под руководством опытных преподавателей. Освойте аккорды, ритм и технику игры.',
     color: 'from-purple-500 to-pink-500'
@@ -18,7 +18,7 @@ const courses = [
     title: 'Укулеле',
     icon: 'Music2',
     iconImage: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/1c1e6407-512a-43c6-bbba-abe275976d67.jpg',
-    emoji: '🎶',
+    emoji: '🧡💛',
     image: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/7d757fdc-9175-4a8c-b19f-510d6e1a9cad.jpg',
     description: 'Маленький инструмент с большим звучанием! Идеален для начинающих и для создания весёлого настроения.',
     color: 'from-orange-500 to-yellow-500'
@@ -48,7 +48,7 @@ const courses = [
     title: 'Сценическая речь',
     icon: 'Mic',
     iconImage: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/998487d0-ffb3-4e9a-9167-8fa0292e74b1.jpg',
-    emoji: '🎤',
+    emoji: '🎙️',
     image: 'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/8ed767ef-9dfd-4919-88a1-f1260858af1e.jpg',
     description: 'Научитесь уверенно говорить на публике, уделяя внимание интонации, тембру и выразительности.',
     color: 'from-pink-500 to-rose-500'
