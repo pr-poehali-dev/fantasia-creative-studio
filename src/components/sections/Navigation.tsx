@@ -19,9 +19,19 @@ export default function Navigation() {
             <a href="#reviews" className="hover:text-primary transition-colors">Отзывы</a>
             <a href="#contact" className="hover:text-primary transition-colors">Контакты</a>
           </div>
-          <Button className="bg-gradient-to-r from-primary to-accent hover:opacity-90">
-            Записаться
-          </Button>
+          <div className="flex gap-2">
+            <Button 
+              variant="outline"
+              onClick={() => window.open('https://metrika.yandex.ru/dashboard?id=101026698', '_blank')}
+              className="hidden md:flex"
+            >
+              <Icon name="BarChart3" className="mr-2" size={16} />
+              Статистика
+            </Button>
+            <Button className="bg-gradient-to-r from-primary to-accent hover:opacity-90">
+              Записаться
+            </Button>
+          </div>
         </div>
       </div>
     </nav>
