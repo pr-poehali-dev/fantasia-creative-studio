@@ -13,7 +13,17 @@ const photos = [
   'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/a61f98b8-40b4-4f1e-b90d-bb9e67e502bb.jpg',
   'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/c912d307-7b7d-441a-bb87-71ea89f7dd4d.jpg',
   'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/1104875e-7af2-46b9-92c7-ac1e11d239db.jpg',
-  'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/62318c9f-4cf3-4e2c-a485-a225d1877797.jpg'
+  'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/62318c9f-4cf3-4e2c-a485-a225d1877797.jpg',
+  'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/b3a4f1aa-7e0e-46ce-a3e3-ac6a74391504.jpg',
+  'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/c722d236-be59-4337-b9e9-d775e2472e10.jpg',
+  'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/44279ac5-9c10-456b-a240-11b02fc793d8.jpg',
+  'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/04d18070-7359-4b61-94b0-5caa646c853a.jpg',
+  'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/331b9482-25e0-4866-a8ad-8fad5158de20.jpg',
+  'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/09b990fb-e8e5-4f67-bf93-2f5b1258ef60.jpg',
+  'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/8c72a6a3-fdc4-4c93-b695-ae720e0b8f6c.jpg',
+  'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/e0e5f14e-a462-45dc-821a-dc51e0ac7703.jpg',
+  'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/846e5345-13aa-43b6-97e2-aef06d3d9109.jpg',
+  'https://cdn.poehali.dev/projects/bdde1fd2-cbd4-4bf0-bfd7-fe42f02ad620/files/31a39df7-caec-4e97-8865-6d252b2508f2.jpg'
 ];
 
 const reviews = [
