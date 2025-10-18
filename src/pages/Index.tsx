@@ -8,6 +8,7 @@ import PricesSection from '@/components/sections/PricesSection';
 import ReviewsSection from '@/components/sections/ReviewsSection';
 import ContactSection from '@/components/sections/ContactSection';
 import Footer from '@/components/sections/Footer';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 export default function Index() {
   return (
@@ -22,6 +23,7 @@ export default function Index() {
       <ReviewsSection />
       <ContactSection />
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 }
