@@ -120,7 +120,7 @@ export default function ContactSection() {
           <CardContent>
             <div className="w-full h-[400px] rounded-lg overflow-hidden mb-4">
               <iframe
-                src="https://yandex.ru/map-widget/v1/?ll=38.976845%2C45.040314&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzEwNDYwMhJP0KDQvtGB0YHQuNGPLCDQmtGA0LDRgdC90L7QtNCw0YAsINGD0LvQuNGG0LAg0JTRg9GI0LjRgdGC0LDRjywgNDMiCg24rUJCFWkpWUI%2C&z=17"
+                src="https://yandex.ru/map-widget/v1/?ll=38.990899%2C45.141716&z=17&mode=whatshere&whatshere%5Bpoint%5D=38.990899%2C45.141716&whatshere%5Bzoom%5D=17"
                 width="100%"
                 height="100%"
                 frameBorder="0"
@@ -130,7 +130,7 @@ export default function ContactSection() {
             </div>
             <Button 
               className="w-full bg-gradient-to-r from-primary to-accent hover:opacity-90"
-              onClick={() => window.open('https://yandex.ru/maps/?rtext=~45.040314,38.976845', '_blank')}
+              onClick={() => window.open('https://yandex.ru/maps/?rtext=~45.141716,38.990899', '_blank')}
             >
               <Icon name="Navigation" className="mr-2" size={16} />
               Построить маршрут
