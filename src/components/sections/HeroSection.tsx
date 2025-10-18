@@ -23,7 +23,7 @@ export default function HeroSection() {
             </Button>
           </div>
         </div>
-        <div className="mt-16 flex justify-center gap-8 text-center">
+        <div className="mt-16 flex justify-center gap-8 text-center flex-wrap">
           <div className="animate-scale-in">
             <div className="text-4xl font-bold text-primary">6</div>
             <div className="text-muted-foreground">Направлений</div>
@@ -33,8 +33,15 @@ export default function HeroSection() {
             <div className="text-muted-foreground">Учеников</div>
           </div>
           <div className="animate-scale-in" style={{ animationDelay: '0.2s' }}>
-            <div className="text-4xl font-bold text-accent">20+</div>
+            <div className="text-4xl font-bold text-accent">20</div>
             <div className="text-muted-foreground">Лет опыта</div>
+          </div>
+          <div className="animate-scale-in" style={{ animationDelay: '0.3s' }}>
+            <div className="text-4xl font-bold flex items-center justify-center gap-1">
+              <Icon name="Star" size={32} className="text-yellow-500 fill-yellow-500" />
+              <span className="text-yellow-600">4.9</span>
+            </div>
+            <div className="text-muted-foreground">Рейтинг</div>
           </div>
         </div>
       </div>
