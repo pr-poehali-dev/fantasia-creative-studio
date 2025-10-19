@@ -42,7 +42,13 @@ export default function PricesSection() {
                   </div>
                 )}
                 <div className="text-3xl font-bold text-primary mb-4">{item.price}</div>
-                <Button className="w-full bg-gradient-to-r from-primary to-accent hover:opacity-90">
+                <Button 
+                  className="w-full bg-gradient-to-r from-primary to-accent hover:opacity-90"
+                  onClick={() => {
+                    const contact = document.getElementById('contact');
+                    if (contact) contact.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                >
                   Записаться
                 </Button>
               </CardContent>

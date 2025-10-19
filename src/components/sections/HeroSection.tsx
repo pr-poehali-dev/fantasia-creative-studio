@@ -34,11 +34,23 @@ export default function HeroSection() {
             Студия творчества для всех возрастов. Развивайте свои таланты с профессиональными преподавателями
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Button size="lg" className="text-lg bg-gradient-to-r from-primary to-accent hover:opacity-90">
+            <Button 
+              size="lg" 
+              className="text-lg bg-gradient-to-r from-primary to-accent hover:opacity-90"
+              onClick={() => {
+                const contact = document.getElementById('contact');
+                if (contact) contact.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               <Icon name="Sparkles" className="mr-2" size={20} />
               Пробное занятие бесплатно
             </Button>
-            <Button size="lg" variant="outline" className="text-lg">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="text-lg"
+              onClick={() => window.location.href = 'tel:+79180352139'}
+            >
               <Icon name="Phone" className="mr-2" size={20} />
               +7 918 035 21 39
             </Button>

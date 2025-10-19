@@ -104,7 +104,13 @@ export default function CoursesSection() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <Button className="w-full bg-gradient-to-r from-primary to-accent hover:opacity-90">
+                <Button 
+                  className="w-full bg-gradient-to-r from-primary to-accent hover:opacity-90"
+                  onClick={() => {
+                    const contact = document.getElementById('contact');
+                    if (contact) contact.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                >
                   <Icon name="CalendarCheck" className="mr-2" size={16} />
                   Записаться
                 </Button>

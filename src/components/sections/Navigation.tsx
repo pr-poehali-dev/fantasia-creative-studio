@@ -28,7 +28,13 @@ export default function Navigation() {
               <Icon name="BarChart3" className="mr-2" size={16} />
               Статистика
             </Button>
-            <Button className="bg-gradient-to-r from-primary to-accent hover:opacity-90">
+            <Button 
+              className="bg-gradient-to-r from-primary to-accent hover:opacity-90"
+              onClick={() => {
+                const contact = document.getElementById('contact');
+                if (contact) contact.scrollIntoView({ behavior: 'smooth' });
+              }}
+            >
               Записаться
             </Button>
           </div>
