@@ -4,12 +4,12 @@ import Icon from '@/components/ui/icon';
 
 const prices = [
   { title: 'Первое занятие', price: 'Бесплатно', description: 'Познакомьтесь со студией и выберите направление', icon: 'Gift' },
-  { title: 'Занятие 45 минут', price: '600 ₽', description: 'Индивидуальное занятие', icon: 'Clock' },
-  { title: 'Занятие 1 час', price: '700 ₽', description: 'Индивидуальное занятие', icon: 'Clock3' },
-  { title: 'Занятие 1 час 30 минут', price: '800 ₽', description: 'Индивидуальное занятие', icon: 'Clock4' },
-  { title: 'Абонемент на 8 занятий по 45 минут', price: '3800 ₽', description: 'Выгода 1000 ₽', icon: 'Ticket', savings: 1000, oldPrice: 4800 },
-  { title: 'Абонемент на 8 занятий по часу', price: '4600 ₽', description: 'Выгода 1000 ₽', icon: 'Ticket', savings: 1000, oldPrice: 5600 },
-  { title: 'Абонемент на 8 занятий по полтора часа', price: '5400 ₽', description: 'Выгода 1000 ₽', icon: 'Ticket', savings: 1000, oldPrice: 6400 }
+  { title: 'Занятие 45 минут', price: '500 ₽', description: 'Индивидуальное занятие', icon: 'Clock' },
+  { title: 'Занятие 1 час', price: '600 ₽', description: 'Индивидуальное занятие', icon: 'Clock3' },
+  { title: 'Занятие 1 час 30 минут', price: '700 ₽', description: 'Индивидуальное занятие', icon: 'Clock4' },
+  { title: 'Абонемент на 8 занятий по 45 минут', price: '3600 ₽', description: 'Выгода 400 ₽', icon: 'Ticket', savings: 400, oldPrice: 4000 },
+  { title: 'Абонемент на 8 занятий по часу', price: '4400 ₽', description: 'Выгода 400 ₽', icon: 'Ticket', savings: 400, oldPrice: 4800 },
+  { title: 'Абонемент на 8 занятий по полтора часа', price: '5200 ₽', description: 'Выгода 400 ₽', icon: 'Ticket', savings: 400, oldPrice: 5600 }
 ];
 
 export default function PricesSection() {
